@@ -1,0 +1,17 @@
+{
+  "name": "emails",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "mju --watch -i ./src -o ./dist",
+    "build": "mjml --build -i ./src -o ./dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mjml": "^3.3.3",
+    "mjml-utils": "^2.1.0"
+  }
+}
