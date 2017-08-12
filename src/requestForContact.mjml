@@ -1,24 +1,28 @@
 <mjml>
+  <mj-head>
+    <mj-font name="Source Sans Pro" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" />
+    <mj-attributes>
+      <mj-all font-family="Source Sans Pro, Helvetica, Arial, sans-seriaf" />
+    </mj-attributes>
+  </mj-head>
   <mj-body>
     <mj-container background-color="#f5f5f5" font-size="13px">
       <mj-section background-color="#865cd6">
         <mj-column width="100%">
-          <mj-image src="http://res.cloudinary.com/jobdoc/image/upload/v1502258443/Logo_white_text_no_background_-_split_z4biyg.png" alt="" width="100px" padding="25px 25px" />
+          <mj-image src="http://res.cloudinary.com/jobdoc/image/upload/w_400/composeHome_header_white_rl2zvg.png" alt="" width="400px" padding="50px 30px 50px 45px" />
         </mj-column>
       </mj-section>
       <mj-section background-color="#f5f5f5" padding-bottom="0" padding-top="0">
         <mj-column width="100%">
           <mj-text align="center" font-size="13" color="#00000" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" padding-left="25" padding-right="25" padding-bottom="10" padding-top="10">
             HELLO
-            <p style="font-size:16px; color:black">[[CompanyName]]</p>
+            <p style="font-size:16px; color:black">%recipientName%</p>
           </mj-text>
         </mj-column>
       </mj-section>
       <mj-section background-color="#f5f5f5" vertical-align="middle" padding-bottom="5" padding-top="0">
         <mj-column vertical-align="middle" width="100%">
-          <mj-divider border-color="#865cd6" border-width="2px" border-style="solid" vertical-align="middle" padding-left="20" padding-right="20" padding-bottom="0" padding-top="0">
-          </mj-divider>
-          <mj-text align="center" color="#000" font-size="13" word-wrap="break-word" font-family="Source Sans Pro, Helvetica" vertical-align="middle" padding-left="25" padding-right="25" padding-bottom="10" padding-top="10"><span style="font-size:20px; font-weight:bold">A customer is interested in building a home.</span>
+          <mj-text align="center" color="#000" font-size="13" word-wrap="break-word" vertical-align="middle" padding-left="25" padding-right="25" padding-bottom="10" padding-top="0"><span style="font-size:20px; font-weight:bold">%senderName% is interested in building a home.</span>
             <br/>
             <span style="font-size:15px">Please find their message below.</span>
           </mj-text>
@@ -26,105 +30,97 @@
       </mj-section>
       <mj-section background-color="#fff" vertical-align="middle" padding-bottom="25" padding-top="25">
         <mj-column vertical-align="middle" width="75%">
-          <mj-text align="center" font-size="18px" font-family="Source Sans Pro, Helvetica" color="#4a4a4a">
-            [[CustomerMessage]]
+          <mj-text align="center" font-size="18px" color="#4a4a4a">
+            <%body%>
           </mj-text>
         </mj-column>
       </mj-section>
       <mj-section background-color="#f5f5f5" padding-bottom="0" padding-top="15">
         <mj-column>
-          <mj-text align="center" color="#000" font-size="15px" word-wrap="break-word" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" padding-left="25" padding-right="25" padding-bottom="0" padding-top="20"><strong>Customer Name</strong>
-          </mj-text>
-          <mj-text align="center" color="#000" font-size="13px" word-wrap="break-word" font-family="Source Sans Pro, Helvetica" vertical-align="top" padding-left="25" padding-right="25" padding-bottom="20" padding-top="10">[[Name]]
-          </mj-text>
-        </mj-column>
-        <mj-column>
           <mj-text align="center" color="#000" font-size="15px" word-wrap="break-word" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" vertical-align="top" padding-left="25" padding-right="25" padding-bottom="0" padding-top="20"><strong>Phone Number</strong>
           </mj-text>
-          <mj-text align="center" color="#000" font-size="13px" word-wrap="break-word" font-family="Source Sans Pro, Helvetica" vertical-align="top" padding-left="25" padding-right="25" padding-bottom="20" padding-top="10">[[PhoneNumber]]
+          <mj-text align="center" color="#000" font-size="13px" word-wrap="break-word" vertical-align="top" padding-left="25" padding-right="25" padding-bottom="20" padding-top="10">%formattedPhoneNumber%
           </mj-text>
         </mj-column>
         <mj-column>
           <mj-text align="center" color="#000" font-size="15px" word-wrap="break-word" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" vertical-align="top" padding-left="25" padding-right="25" padding-bottom="0" padding-top="20"><strong>Email</strong>
           </mj-text>
-          <mj-text align="center" color="#000" font-size="13px" word-wrap="break-word" font-family="Source Sans Pro, Helvetica" vertical-align="top" padding-left="25" padding-right="25" padding-bottom="20" padding-top="10">[[Email]]
+          <mj-text align="center" color="#000" font-size="13px" word-wrap="break-word" vertical-align="top" padding-left="25" padding-right="25" padding-bottom="20" padding-top="10">%email%
+          </mj-text>
+        </mj-column>
+        <mj-column>
+          <mj-text align="center" color="#000" font-size="15px" word-wrap="break-word" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" padding-left="25" padding-right="25" padding-bottom="0" padding-top="20"><strong>Timeline</strong>
+          </mj-text>
+          <mj-text align="center" color="#000" font-size="13px" word-wrap="break-word" vertical-align="top" padding-left="25" padding-right="25" padding-bottom="20" padding-top="10">%timeline%
           </mj-text>
         </mj-column>
       </mj-section>
       <mj-section background-color="#f5f5f5" padding-bottom="15" padding-top="0">
         <mj-column>
-          <mj-text align="center" color="#000" font-size="15px" word-wrap="break-word" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" padding-left="25" padding-right="25" padding-bottom="0" padding-top="20"><strong>Timeline</strong>
+          <mj-text align="center" color="#000" font-size="15px" word-wrap="break-word" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" padding-left="25" padding-right="25" padding-bottom="0" padding-top="20"><strong>Purpose</strong>
           </mj-text>
-          <mj-text align="center" color="#000" font-size="13px" word-wrap="break-word" font-family="Source Sans Pro, Helvetica" vertical-align="top" padding-left="25" padding-right="25" padding-bottom="20" padding-top="10">[[Timeline]]
+          <mj-text align="center" color="#000" font-size="13px" word-wrap="break-word" vertical-align="top" padding-left="25" padding-right="25" padding-bottom="20" padding-top="10">%purpose%
           </mj-text>
         </mj-column>
         <mj-column>
           <mj-text align="center" color="#000" font-size="15px" word-wrap="break-word" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" vertical-align="top" padding-left="25" padding-right="25" padding-bottom="0" padding-top="20"><strong>Credit Score</strong>
           </mj-text>
-          <mj-text align="center" color="#000" font-size="13px" word-wrap="break-word" font-family="Source Sans Pro, Helvetica" vertical-align="top" padding-left="25" padding-right="25" padding-bottom="20" padding-top="10">[[CreditScore]]
+          <mj-text align="center" color="#000" font-size="13px" word-wrap="break-word" vertical-align="top" padding-left="25" padding-right="25" padding-bottom="20" padding-top="10">%creditScore%
           </mj-text>
         </mj-column>
         <mj-column>
           <mj-text align="center" color="#000" font-size="15px" word-wrap="break-word" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" vertical-align="top" padding-left="25" padding-right="25" padding-bottom="0" padding-top="20"><strong>Annual Income</strong>
           </mj-text>
-          <mj-text align="center" color="#000" font-size="13px" word-wrap="break-word" font-family="Source Sans Pro, Helvetica" vertical-align="top" padding-left="25" padding-right="25" padding-bottom="20" padding-top="10">[[Income]]
+          <mj-text align="center" color="#000" font-size="13px" word-wrap="break-word" vertical-align="top" padding-left="25" padding-right="25" padding-bottom="20" padding-top="10">%income%
           </mj-text>
         </mj-column>
       </mj-section>
-      <mj-section background-color="#f5f5f5" padding-bottom="20" padding-top="20">
+      <mj-section background-color="#f5f5f5" padding-bottom="20" padding-top="0">
         <mj-column vertical-align="top" width="50%">
-          <mj-button background-color="#865cd6" color="#fff" padding="15px 30px" border-radius="3px" href="https://mjml.io" padding-bottom="10" padding-top="0">
-            EMAIL CLIENT
+          <mj-button background-color="#865cd6" color="#fff" padding="15px 30px" border-radius="3px" href="mailto:%email%" padding-bottom="10" padding-top="0">
+            Email
           </mj-button>
         </mj-column>
         <mj-column vertical-align="top" width="50%">
-          <mj-button background-color="#865cd6" color="#fff" padding="15px 30px" border-radius="3px" href="https://mjml.io" padding-bottom="10" padding-top="0">
-            CALL CLIENT
+          <mj-button background-color="#865cd6" color="#fff" padding="15px 30px" border-radius="3px" href="tel:%phoneNumber%" padding-bottom="10" padding-top="0">
+            Call
           </mj-button>
         </mj-column>
       </mj-section>
       <mj-section background-color="#fff" padding-bottom="0" padding-top="0">
         <mj-column>
-          <mj-image src="http://res.cloudinary.com/jobdoc/image/upload/c_fill,h_250,w_302/o68gm51dydqdz7jubsmk.jpg" alt="Man 1" width="302" padding-left="0" padding-right="0" padding-bottom="0" padding-top="0">
+          <mj-image src="http://res.cloudinary.com/jobdoc/image/upload/c_fill,h_250,w_302/%modelImageId%" alt="House" width="302" padding-left="0" padding-right="0" padding-bottom="0" padding-top="0">
           </mj-image>
         </mj-column>
         <mj-column width="50%">
           <mj-text align="left" color="#000" font-size="13" padding-left="25" padding-right="25" padding-bottom="0" padding-top="0">
-            <p style="font-size: 19px;">HOUSE SELECTION</p>
-            <p style="font-size: 13px;">[[ModelName]]</p>
-            <p>Area: [[Area]]</p>
-            <p>Beds: [[Beds]] Baths: [[Baths]] </p>
-            <p>[[Price]]</p>
+            <p style="font-size: 19px;">HOUSE</p>
+            <p style="font-size: 13px;">%modelName%</p>
+            <p>Area: %modelArea%</p>
+            <p>Beds: %beds% Baths: %baths% </p>
+            <p>%modelPrice%</p>
           </mj-text>
-          <mj-button background-color="#fff" color="#333" border="2px solid #865CD6" font-weight="600" padding="15px 30px" border-radius="3px" href="https://mjml.io" padding-bottom="10" padding-top="0">
-            VIEW HOUSE
+          <mj-button align="left" background-color="#fff" color="#333" border="2px solid #865CD6" font-weight="600" padding="15px 25px" border-radius="3px" href="https://www.composehome.com/houses/%modelId%" padding-bottom="10" padding-top="0">
+            View house
           </mj-button>
         </mj-column>
       </mj-section>
       <mj-section background-color="#fff" padding-bottom="0" padding-top="0">
         <mj-column>
-          <mj-image src="http://res.cloudinary.com/jobdoc/image/upload/c_fill,h_210,w_302/ofeulinjopsmmb1wchem.jpg" alt="Man 2" align="center" border="none" width="302" padding-left="0" padding-right="0" padding-bottom="0" padding-top="0">
+          <mj-image src="http://res.cloudinary.com/jobdoc/image/upload/c_fill,h_250,w_302/%parcelImageId%" alt="Land" align="center" border="none" width="302" padding-left="0" padding-right="0" padding-bottom="0" padding-top="0">
 
           </mj-image>
         </mj-column>
         <mj-column>
           <mj-text align="left" color="#000" font-size="13" padding-left="25" padding-right="25" padding-bottom="0" padding-top="0">
-            <p style="font-size: 19px;">LAND SELECTION</p>
-            <p style="font-size: 13px;">[[Address]]</p>
-            <p>Area: [[Area]]</p>
-            <p>[[Price]]</p>
+            <p style="font-size: 19px;">LAND</p>
+            <p style="font-size: 13px;">%address%</p>
+            <p>Area: %parcelArea%</p>
+            <p>%parcelPrice%</p>
           </mj-text>
-          <mj-button background-color="#fff" color="#333" border="2px solid #865CD6" font-weight="600" padding="15px 30px" border-radius="3px" href="https://mjml.io" padding-bottom="10" padding-top="0">
-            VIEW LAND
+          <mj-button align="left" background-color="#fff" color="#333" border="2px solid #865CD6" font-weight="600" padding="15px 25px" border-radius="3px" href="https://www.composehome.com/land/%parcelId%" padding-bottom="10" padding-top="0">
+            View land
           </mj-button>
-        </mj-column>
-      </mj-section>
-      <mj-section background-color="#f5f5f5" padding-bottom="5" padding-top="0">
-        <mj-column vertical-align="middle" width="100%">
-          <mj-text align="center" color="#00000" font-size="15" word-wrap="break-word" font-family="Source Sans Pro, Helvetica" vertical-align="middle" padding-left="25" padding-right="25" padding-bottom="10" padding-top="10">Best,
-            <br/>
-            <span style="font-size:15px">composeHome</span>
-          </mj-text>
         </mj-column>
       </mj-section>
     </mj-container>
